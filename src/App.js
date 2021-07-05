@@ -3,7 +3,11 @@ import avatar from './avatar.png';
 import programming from './programming.png';
 import designer from './designer.png';
 import datascience from './datascience.png';
-import {Divider, Grid, Card, CardContent, Button, Toolbar, AppBar, Typography} from '@material-ui/core';
+import {Divider, Grid, Card, CardContent, Toolbar, AppBar, Typography} from '@material-ui/core';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import EmailIcon from '@material-ui/icons/Email';
+
 var dev_tools = ["React.js", "Flask", "Flutter","Material-ui"]
 var design_tools = ["Figma", "Adobe XD", "Photoshop", "Pen & Paper"]
 var data_tools = ["Numpy", "Matplotlib", "Pandas", "Pytorch"]
@@ -16,11 +20,6 @@ function App() {
             <Typography variant="h4" edge = "start" style = {{"font-family": "Lucida Bright", "font-weight": "bolder", color: "black", "font-size": "20px"}}>
               ERIC ZHANG
             </Typography>
-            <div style = {{marginLeft : "auto"}}>
-              <Button edge = "end" style = {{marginLeft : "30px"}}>WORKS</Button>
-              <Button edge = "end" style = {{marginLeft : "30px"}}>ABOUT</Button>
-              <Button edge = "end" variant = "outlined" style = {{marginLeft : "30px"}}>CONTACT ME</Button>
-            </div>
           </Toolbar>
 
           <br></br>
@@ -111,18 +110,11 @@ function App() {
         </div>
         <div>
           <Divider style = {{background: "white"}}></Divider>
-            <Typography variant = "h3" style = {{color: "white", "font-family": "Monospace", margin: "25px"}}>My Works</Typography>
-            <Typography variant = "h5" style = {{color: "white", "font-family": "Candara"}}>These are projects I have completed. Want more information? Contact Me</Typography>
-
-            <Grid container>
-              <Grid item xs = {4}>
-                <Card style = {{margin: "50px"}}>
-                  <CardContent>
-                    <Typography>H</Typography>
-                  </CardContent>
-                </Card>
-              </Grid>
-            </Grid>
+              <center >
+                <a href = "https://github.com/ericspring08"><GitHubIcon fontSize = "large" style = {{margin: "10px", color: "white"}}></GitHubIcon></a>
+                <a href = "https://www.linkedin.com/in/eric-zhang-32b0b4216/"><LinkedInIcon fontSize = "large" style = {{margin: "10px", color: "white"}}></LinkedInIcon></a>
+                <a href = "mailto: ericspring08@gmail.com"><EmailIcon fontSize = "large" style = {{margin: "10px", color: "white"}}></EmailIcon></a>
+              </center>
         </div>
     </div>
   );
